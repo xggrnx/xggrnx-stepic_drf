@@ -7,7 +7,6 @@ from goods.models import Goods
 
 @api_view(http_method_names=['GET'])
 def goods_list(request):
-    resp = []
     filters = {'min_price': 'price', 'min_weight': 'weight_grams'}
 
     if request.query_params:
