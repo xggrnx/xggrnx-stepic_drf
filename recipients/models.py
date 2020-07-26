@@ -4,7 +4,10 @@ from lib.models import BaseModel
 
 
 class RecipientModel(BaseModel):
-    pass
+    keys = [
+        'info.surname', 'info.name', 'info.patronymic',
+        'contacts.phoneNumber',
+    ]
 
 
 Recipient = RecipientModel('recipients')
